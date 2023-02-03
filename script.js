@@ -26,6 +26,7 @@ const saveNote = ()=>{
 // </div>
 // <textarea></textarea>
 // </div>
+// To add note.
 const addNote = (text = "") =>{
     const note = document.createElement("div");
     note.classList.add("note");
@@ -43,7 +44,7 @@ const addNote = (text = "") =>{
             saveNote()
         }
     )
-    //to del note.
+    //To del note.
     note.querySelector(".trash").addEventListener(
         "click",
         function(){
@@ -51,6 +52,7 @@ const addNote = (text = "") =>{
             saveNote()
         }
     )
+    //To auto save note.
     note.querySelector("textarea").addEventListener(
         "focusout",
         function(){
